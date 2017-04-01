@@ -1,0 +1,1 @@
+window.java.print('Hello Java!');
