@@ -1,1 +1,3 @@
-window.java.print('Hello Java!');
+$.getJSON('../data/file.json', function(data) {         
+    alert(data);
+});
