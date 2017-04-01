@@ -1,8 +1,8 @@
 
 //global includes article object
 //article has img(), text(), and link();
-//top 3 has to be sorted
-var articles = []
+//array has to be sorted
+var articles = [];
 
 class article{
   constructor(img, text, link){
@@ -41,14 +41,16 @@ function expandArticle(obj){
   //open into new page with article
     window.location = "article.html";
   if(id == "headline-card"){
-    updateArticle();
+    updateArticle(articles[0]);
   } else if(id = "side1-card"){
-
+    updateArticle(articles[1]);
   } else if(id == "side2-card"){
-
+    updateArticle(articles[2]);
   }
 }
 
+
+//manages article.html Parameter obj is article type
 function updateArticle(obj){
 
 }
