@@ -1,0 +1,5 @@
+http://www.nytimes.com/services/xml/rss/nyt/Politics.xml
+http://www.nytimes.com/services/xml/rss/nyt/US.xml
+http://www.nytimes.com/services/xml/rss/nyt/NYRegion.xml
+http://feeds.nytimes.com/nyt/rss/Technology
+http://www.nytimes.com/services/xml/rss/nyt/Science.xml
