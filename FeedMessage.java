@@ -1,9 +1,4 @@
-package Main;
-/*
- * Represents one RSS message
- */
 public class FeedMessage {
-//Test
         String title;
         String description;
         String link;

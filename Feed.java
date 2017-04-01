@@ -1,4 +1,3 @@
-package Main;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -6,7 +5,6 @@ import java.util.List;
  * Stores an RSS feed
  */
 public class Feed {
-	//Test
         final String title;
         final String link;
         final String description;

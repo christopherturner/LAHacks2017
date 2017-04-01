@@ -1,4 +1,3 @@
-package Main;
 import java.io.IOException;
 import java.io.InputStream;
 import java.net.MalformedURLException;
@@ -9,12 +8,12 @@ import javax.xml.stream.XMLInputFactory;
 import javax.xml.stream.XMLStreamException;
 import javax.xml.stream.events.Characters;
 import javax.xml.stream.events.XMLEvent;
-
+/*
 import Main.Feed;
 import Main.FeedMessage;
+*/
 
 public class RSSFeedParser {
-	//Test
         static final String TITLE = "title";
         static final String DESCRIPTION = "description";
         static final String CHANNEL = "channel";
