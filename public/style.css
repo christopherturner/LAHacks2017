@@ -124,6 +124,7 @@
 	margin-bottom: 0px;
 	height: 310px;
 	background-color: #EB784E;
+  overflow:hidden;
   /*width: 694px;*/
 }
 .side-card{
