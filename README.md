@@ -12,4 +12,4 @@ accuFact is built using `HTML`, `CSS`, and `JS`.  We've implemented the `React` 
 
 ## Screenshot  
 
-![accuFact Homepage](screenshot.png)  
+![accuFact Homepage](https://raw.githubusercontent.com/christopherturner/LAHacks2017/master/screenshot.png)  
