@@ -4,18 +4,6 @@
 var topArticles = [];
 var articles = fetchData();
 
-class article{
-  constructor(img, text, link){
-    this.img = img;
-    this.text = text;
-    this.link = link;
-  }
-}
-
-for(var i=0; i<3; i++){
-  topArticles.push(new article("images/logo.png", "Sample text", "Sample link"));
-}
-
 $(document).ready(function() {
   $("#searchButton").on("click", search);
   $(".card").on("click", function(event){
@@ -26,15 +14,16 @@ $(document).ready(function() {
 function search(){
   //update all 3 stories boards
   //headline
-  console.log(topArticles[0].img);
-  $("#headline-img").attr("src", topArticles[0].img);
-  $("#headline-text").html(topArticles[0].text);
+  var inputText = $("#search-input").value;
+  sort(inputText);
+  $("#headline-img").attr("src", topArticles[0].urlToImage);
+  $("#headline-text").html(topArticles[0].description);
   //side story 1
-  $("#side1-img").attr("src", topArticles[1].img);
-  $("#side1-text").html(topArticles[1].text);
+  $("#side1-img").attr("src", topArticles[1].urlToImage);
+  $("#side1-text").html(topArticles[1].description);
   //side story 2
-  $("#side2-img").attr("src", topArticles[2].img);
-  $("#side2-text").html(topArticles[2].text);
+  $("#side2-img").attr("src", topArticles[2].urlToImage);
+  $("#side2-text").html(topArticles[2].description);
 }
 
 function expandArticle(obj){
@@ -57,8 +46,9 @@ function updateArticle(obj){
 }
 
 //2d array sort PUTS into top 3
-function sort(articles){
-
+function sort(input){
+  //mock code
+  for(var i=0; i<3; i++){
+    topArticles.push(articles[0][i]);
+  }
 }
-
-//init. fetch all stories
