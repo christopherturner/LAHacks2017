@@ -38,7 +38,7 @@ function expandArticle(obj){
     //updateArticle(topArticles[idNum]);
     window.open(topArticles[idNum].url);
   }
-    window.location = "article.html";
+    //window.location = "article.html";
 }
 
 
