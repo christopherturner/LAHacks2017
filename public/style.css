@@ -8,34 +8,39 @@
 
 #catagories-text{
 	color: #ffffff;
-
 }
-
+/*button*/
 #catagories-button{
 	color: #ffffff;
 	background: none;
 }
 
 .logo{
-	margin: 10px;
+	margin-top: 20px;
 	width: 100%;
-  	width: auto;
-	height: 50px;
+  width: auto;
+	height: 60px;
 }
 
 /*search top*/
 #search-row{
-  background-color: white;
+  width: 50px;
+  height: auto;
 }
 
 #search-input{
-	margin: 10px 10px 10px 10px;
+	margin: 0px 0px 10px 100px;
+  padding-right: 50px;
+  padding-top: 15px;
+  width: 500px;
 }
 
 /*search box*/
 #search-input input{
 	background: white;
 	border-style: solid;
+  position: relative;
+  margin-top: 9px;
 }
 
 /*search button*/
@@ -44,16 +49,20 @@
     border-style: solid;
     border: 1px solid #ccc;
     background-color: none;
-    padding: 10px 10px 5px 10px;
-    border-left: solid 1px #ccc;
+    margin-top: 0px;
+
+    padding: 10px 10px 5px 5px; /*don't change*/
+    border-left: solid 0px #ccc;
+    position: static;
 }
 
 #search-input button:hover{
     border: 0;
     box-shadow: none;
-    border-left: solid 1px #ccc;
+    border-left: solid 0px #ccc;
     background: #868a93;
-    padding: 10px 10px 6px 10px;
+    padding: 10px 10px 7px 5px;
+
 }
 
 #search-input .glyphicon-search{
@@ -63,11 +72,14 @@
 /*body*/
 
 #site-list{
-
+  width: 190px;
 }
 
 .list-group{
 	border: solid 1px #d6d6d6;
+  padding: 10px 0px 7px 5px;
+  height: auto;
+  width: 170px;
 }
 
 .list-group-item{
@@ -75,7 +87,6 @@
 }
 
 #story-headline{
-
 }
 
 #story-side{
@@ -87,6 +98,7 @@
 	width: 80%;
 	height: 80%;
 	overflow: hidden;
+  /*position: relative;*/
 }
 
 .card-text{
@@ -94,7 +106,6 @@
 	width: 100%;
 	display: inline-block;
 	white-space: nowrap;
-	overflow: hidden;
 	text-overflow: ellipsis;
 }
 
@@ -104,16 +115,20 @@
 	background-color: rgba(0, 0, 0, 0.3);
 	text-align: center;
 	height: 150px;
-	width: auto;
+  width: auto;
 	border: solid 1px #d6d6d6;
 }
 
+/*head card*/
 #headline-card{
 	margin-bottom: 0px;
 	height: 310px;
 	background-color: #EB784E;
+  /*width: 694px;*/
 }
-
 .side-card{
-
+  /*background-color: rgba(0, 0, 0, 0.3);
+  height: 150px;
+  width: 220px;
+  overflow: visible;*/
 }
