@@ -5,8 +5,7 @@
   <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
   <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
   <link rel="stylesheet" href="style.css">
-  <script src="index.js"></script>
-  <title>Fakt</title>
+  <title>AccuFact</title>
 </head>
 
 <body>
@@ -30,13 +29,13 @@
     <!-- searchbar -->
     <div class="row" id="search-row">
       <div class="col-xs-3 col-md-3">
-        <img src="logo.png" id="logo"/>
+        <img src="images/logo.png" class="logo"/>
       </div>
       <div id="search-input">
         <div class="input-group col-xs-9 col-md-9">
         <input type="text" class="form-control input-lg" placeholder="search" />
         <span class="input-group-btn">
-          <button class="btn btn-into btn-lg" type="button">
+          <button class="btn btn-into btn-lg" type="button" id="searchButton">
             <i class="glyphicon glyphicon-search"></i>
           </button>
         </span>
@@ -59,30 +58,30 @@
         <div class="row">
         <div class="col-xs-8 col-md-8" id="story-headline">
           <div class="card" id="headline-card">
-            <img class="card-img-top" src="" alt="Headline Image"/>
+            <img class="card-img-top" id="headline-img" src="" alt="Headline Image"/>
             <div class="card-block">
-              <p class="card-text">Example</p>
+              <p class="card-text" id="headline-text">Example</p>
             </div>
           </div>
         </div>
         <div class="col-xs-4 col-md-4" id="story-side">
-          <div class="card" id="side-card">
-            <img class="card-img-top" src="" alt="Side Story 2 Image"/>
+          <div class="card side-card" id="side1-card">
+            <img class="card-img-top" id="side1-img" src="" alt="Side Story 1 Image"/>
             <div class="card-block">
-              <p class="card-text">Example</p>
+              <p class="card-text" id="side1-text">Example</p>
             </div>
           </div>
-          <div class="card" id="side-card">
-            <img class="card-img-top" src="" alt="Side Story 2 Image"/>
+          <div class="card side-card" id="side2-card">
+            <img class="card-img-top" id="side2-img" src="" alt="Side Story 2 Image"/>
             <div class="card-block">
-              <p class="card-text">Example</p>
+              <p class="card-text" id="side2-text">Example</p>
             </div>
           </div>
         </div>
         </div>
         <div class="row">
           <div class="side-nav" id="link-list">
-            <li>l1</li>
+            <li id="test">l1</li>
             <li>l2</li>
             <li>l3</li>
             <li>l4</li>
@@ -98,7 +97,6 @@
   src="https://code.jquery.com/jquery-3.2.1.js"
   integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
   crossorigin="anonymous"></script>
-  <script src="main.js"></script>
+  <script src="js/main.js"></script>
 
-</body>
 </html>
