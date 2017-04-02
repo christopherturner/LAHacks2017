@@ -6,18 +6,18 @@ var topArticles = [];
 var articles;
 
 $(document).ready(function() {
-  $("#searchButton").on("click", search);
+  $("#searchButton").on("click", searchA);
   $(".card").on("click", function(event){
     expandArticle(this);
   });
   articles = fetchData();
 });
 
-function search(){
+function searchA(){
   //update all 3 stories boards
   //headline
-  var inputText = $("#search-input").value;
-  sort(inputText);
+  var inputText = $("#search-input-text").val();
+  search(inputText);
   $("#headline-img").attr("src", topArticles[0].urlToImage);
   $("#headline-text").html(topArticles[0].description);
 
