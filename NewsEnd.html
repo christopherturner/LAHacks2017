@@ -1,0 +1,26 @@
+<html>
+<head>
+	
+</head>
+<div id="reply"></div>
+
+<script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+
+<script>
+$(function () {
+    $.getJSON(
+        "https://newsapi.org/v1/articles?source=cnn&apiKey=31cd62ebfe8a4a7c92702cea80681433",
+        function (data) {
+        	$("#reply").html(JSON.stringify(data));
+        	var obj = JSON.parse(JSON.stringify(data)).articles;
+        	var titles = "";
+        	for (var i = 0; i < obj.length; i++) {
+        		titles += obj[i].title + ", ";
+        	}
+        	alert(titles);
+        });
+});
+</script>
+
+</script>
+</html>
