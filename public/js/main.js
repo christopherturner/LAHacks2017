@@ -30,14 +30,13 @@ function search(){
 function expandArticle(obj){
   var id = obj.id;
   //open into new page with article
-    window.location = "article.html";
   if(id == "headline-card"){
     updateArticle(topArticles[0]);
-  } else if(id = "side1-card"){
-    updateArticle(topArticles[1]);
-  } else if(id == "side2-card"){
-    updateArticle(topArticles[2]);
+  } else {
+    idNum = id.match(/\d+/)[0];
+    updateArticle(topArticles[idNum]);
   }
+    window.location = "article.html";
 }
 
 
@@ -54,8 +53,9 @@ function updateArticle(obj){
 
 function sort(input){
   //mock code
-  for(var i=0; i<10; i++){
-    topArticles.push(articles[0][i]);
+  for(var i=0; i<articles.length; i++){
+    for(var j=0; j<2; j++){
+      topArticles.push(articles[i][j]);
+    }
   }
-  topArticles.push(articles[1][0]);
 }
