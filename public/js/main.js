@@ -31,10 +31,12 @@ function expandArticle(obj){
   var id = obj.id;
   //open into new page with article
   if(id == "headline-card"){
-    updateArticle(topArticles[0]);
+    //updateArticle(topArticles[0]);
+    window.open(topArticles[0].url);
   } else {
     idNum = id.match(/\d+/)[0];
-    updateArticle(topArticles[idNum]);
+    //updateArticle(topArticles[idNum]);
+    window.open(topArticles[idNum].url);
   }
     window.location = "article.html";
 }
