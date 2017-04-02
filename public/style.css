@@ -28,7 +28,7 @@
   height: auto;
 }
 
-#search-input-text {
+#search-input{
 	margin: 0px 0px 10px 100px;
   padding-right: 50px;
   padding-top: 15px;
@@ -36,7 +36,7 @@
 }
 
 /*search box*/
-#search-input-text input{
+#search-input input{
 	background: white;
 	border-style: solid;
   position: relative;
