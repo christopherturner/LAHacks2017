@@ -82,27 +82,38 @@
 
 }
 
+.card-img-top{
+	margin-top: 2%;
+	width: 80%;
+	height: 80%;
+	overflow: hidden;
+}
+
+.card-text{
+	margin-top: 1%;
+	width: 100%;
+	display: inline-block;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
 .card{
 	margin-bottom: 10px;
 	width: 105%;
 	background-color: rgba(0, 0, 0, 0.3);
 	text-align: center;
-	min-height: 150px;
+	height: 150px;
 	width: auto;
-  	height: auto;
 	border: solid 1px #d6d6d6;
 }
 
 #headline-card{
 	margin-bottom: 0px;
-	min-height: 310px;
+	height: 310px;
 	background-color: #EB784E;
 }
 
-#side-card{
+.side-card{
 
-}
-
-#link-list{
-	font-size: 110%;
 }
