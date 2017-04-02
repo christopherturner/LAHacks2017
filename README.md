@@ -9,3 +9,7 @@ accuFact retrieves live stories using [News API](https://newsapi.org).  Using th
 ## Backend/Frontend
 
 accuFact is built using `HTML`, `CSS`, and `JS`.  We've implemented the `React` framework for extensibility and scaling options.  Our project is hosted on `GitHub`, deployed on `Heroku`, and uses a `Namecheap`-registered domain name.
+
+## Screenshot
+
+![accuFact Homepage](screenshot.png)
