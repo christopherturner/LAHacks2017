@@ -1,5 +1,5 @@
 #catagories{
-	background-color: #313337;
+	background-color: #123C5C;
 	padding: 3px 10px 3px 10px;
 }
 
@@ -15,6 +15,7 @@
 #logo{
 	margin: 10px;
 	width: 100%;
+  width: auto;
 	height: 50px;
 }
 
@@ -36,7 +37,7 @@
     border-style: solid;
     border: 1px solid #ccc;
     background-color: none;
-    padding: 10px 10px 6px 10px;
+    padding: 10px 10px 5px 10px;
     border-left: solid 1px #ccc;
 }
 
@@ -80,6 +81,8 @@
 	background-color: rgba(0, 0, 0, 0.3);
 	text-align: center;
 	min-height: 150px;
+  width: auto;
+
 	border: solid 1px #000000;
 }
 
