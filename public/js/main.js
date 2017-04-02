@@ -32,12 +32,15 @@ function expandArticle(obj){
   //open into new page with article
   if(id == "headline-card"){
     //updateArticle(topArticles[0]);
+    console.log("opening article0");
     window.open(topArticles[0].url);
   } else {
     idNum = id.match(/\d+/)[0];
+    console.log("opening article 1+");
     //updateArticle(topArticles[idNum]);
     window.open(topArticles[idNum].url);
   }
+  console.log("end");
     //window.location = "article.html";
 }
 
