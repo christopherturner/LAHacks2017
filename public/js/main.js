@@ -40,7 +40,7 @@ function expandArticle(obj){
     //updateArticle(topArticles[idNum]);
     window.open(topArticles[idNum].url);
   }
-  console.log("end");
+  alert("end");
     //window.location = "article.html";
 }
 
