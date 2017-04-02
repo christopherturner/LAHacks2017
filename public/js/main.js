@@ -29,6 +29,7 @@ function searchA(){
 
 function expandArticle(obj){
   var id = obj.id;
+  alert("starting");
   //open into new page with article
   if(id == "headline-card"){
     //updateArticle(topArticles[0]);
