@@ -1,26 +1,20 @@
 <html>
 <head>
-	
+	<script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+	<script>
+		var source = ["bbc-news", "bloomberg", "buzzfeed", "cnn", "google-news", "reddit-r-all",
+		"the-new-york-times", "the-verge", "national-geographic"];
+		var stories = [];
+
+		for(var i = 0; i < source.length; i++){
+			var current = source[i];
+    			$.getJSON(
+        			"https://newsapi.org/v1/articles?source=" + current + "&apiKey=31cd62ebfe8a4a7c92702cea80681433",
+        			function (data) {
+        				var obj = JSON.parse(JSON.stringify(data)).articles;
+						stories.push(obj);
+        			});
+		}
+	</script>
 </head>
-<div id="reply"></div>
-
-<script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
-
-<script>
-$(function () {
-    $.getJSON(
-        "https://newsapi.org/v1/articles?source=cnn&apiKey=31cd62ebfe8a4a7c92702cea80681433",
-        function (data) {
-        	$("#reply").html(JSON.stringify(data));
-        	var obj = JSON.parse(JSON.stringify(data)).articles;
-        	var titles = "";
-        	for (var i = 0; i < obj.length; i++) {
-        		titles += obj[i].title + ", ";
-        	}
-        	alert(titles);
-        });
-});
-</script>
-
-</script>
 </html>
