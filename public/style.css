@@ -129,6 +129,6 @@
 .side-card{
   /*background-color: rgba(0, 0, 0, 0.3);
   height: 150px;
-  width: 220px;
-  overflow: visible;*/
+  width: 220px;*/
+  overflow: hidden;
 }
