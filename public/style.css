@@ -1,14 +1,12 @@
-* {
-  font-family: Helvetica;
-}
 #catagories{
 	background-color: #123C5C;
 	padding: 3px 10px 3px 10px;
+
 }
 
 #catagories-text{
 	color: #ffffff;
-
+	
 }
 
 #catagories-button{
@@ -16,31 +14,36 @@
 	background: none;
 }
 
-.logo{
+#logo{
 	margin: 10px;
 	width: 100%;
-  	width: auto;
+  width: auto;
 	height: 50px;
 }
 
-/*search top*/
+/*surrounding search box*/
 #search-row{
-  background-color: white;
+	background-color: white;
 }
 
+/*surrounding search box*/
 #search-input{
 	margin: 10px 10px 10px 10px;
+  padding-left: 30px;
+
 }
 
 /*search box*/
 #search-input input{
 	background: white;
 	border-style: solid;
+	padding-left: 15px;
+
 }
 
-/*search button*/
+/*search icon*/
 #search-input button{
-    background: none;
+    background: white;
     border-style: solid;
     border: 1px solid #ccc;
     background-color: none;
@@ -52,7 +55,7 @@
     border: 0;
     box-shadow: none;
     border-left: solid 1px #ccc;
-    background: #868a93;
+    background: white;
     padding: 10px 10px 6px 10px;
 }
 
@@ -66,43 +69,54 @@
 
 }
 
+/*sidebar*/
 .list-group{
-	border: solid 1px #d6d6d6;
+	border: solid 1px #d4d4d4;
+
 }
 
+/*sidebar*/
 .list-group-item{
 	border: none;
+	background-color: white;
+
 }
 
+/*surrounding story1*/
 #story-headline{
-
 }
-
+/*surrounding story2&3*/
 #story-side{
-
 }
 
 .card{
-	margin-bottom: 10px;
-	width: 105%;
-	background-color: rgba(0, 0, 0, 0.3);
+	margin-bottom: 30px;
+	width: 100%;
+	background-color: rgba(0, 0, 0, 0.2);
 	text-align: center;
-	min-height: 150px;
-	width: auto;
-  	height: auto;
-	border: solid 1px #d6d6d6;
+	min-height: 140px;
+  width: auto;
+
+	border: solid 1px #d4d4d4;
 }
 
+/*story1*/
 #headline-card{
 	margin-bottom: 0px;
 	min-height: 310px;
 	background-color: #EB784E;
 }
 
+/*story2*/
 #side-card{
 
 }
 
 #link-list{
-	font-size: 110%;
+	font-size: 100%;
+	background-color: #d4d4d4;
+	margin-right: 15px;
+	margin-left: 15px;
+	border: solid 1px #d4d4d4;
+
 }
