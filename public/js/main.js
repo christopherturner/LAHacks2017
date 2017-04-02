@@ -1,7 +1,8 @@
 //global includes article object
 //article has img(), text(), and link();
 //array has to be sorted
-var articles = [];
+var topArticles = [];
+var articles = fetchData();
 
 class article{
   constructor(img, text, link){
@@ -12,7 +13,7 @@ class article{
 }
 
 for(var i=0; i<3; i++){
-  articles.push(new article("images/logo.png", "Sample text", "Sample link"));
+  topArticles.push(new article("images/logo.png", "Sample text", "Sample link"));
 }
 
 $(document).ready(function() {
@@ -25,15 +26,15 @@ $(document).ready(function() {
 function search(){
   //update all 3 stories boards
   //headline
-  console.log(articles[0].img);
-  $("#headline-img").attr("src", articles[0].img);
-  $("#headline-text").html(articles[0].text);
+  console.log(topArticles[0].img);
+  $("#headline-img").attr("src", topArticles[0].img);
+  $("#headline-text").html(topArticles[0].text);
   //side story 1
-  $("#side1-img").attr("src", articles[1].img);
-  $("#side1-text").html(articles[1].text);
+  $("#side1-img").attr("src", topArticles[1].img);
+  $("#side1-text").html(topArticles[1].text);
   //side story 2
-  $("#side2-img").attr("src", articles[2].img);
-  $("#side2-text").html(articles[2].text);
+  $("#side2-img").attr("src", topArticles[2].img);
+  $("#side2-text").html(topArticles[2].text);
 }
 
 function expandArticle(obj){
@@ -41,11 +42,11 @@ function expandArticle(obj){
   //open into new page with article
     window.location = "article.html";
   if(id == "headline-card"){
-    updateArticle(articles[0]);
+    updateArticle(topArticles[0]);
   } else if(id = "side1-card"){
-    updateArticle(articles[1]);
+    updateArticle(topArticles[1]);
   } else if(id == "side2-card"){
-    updateArticle(articles[2]);
+    updateArticle(topArticles[2]);
   }
 }
 
@@ -54,3 +55,10 @@ function expandArticle(obj){
 function updateArticle(obj){
 
 }
+
+//2d array sort PUTS into top 3
+function sort(articles){
+
+}
+
+//init. fetch all stories
